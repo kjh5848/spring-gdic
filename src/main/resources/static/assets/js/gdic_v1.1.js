@@ -1,65 +1,180 @@
-var gdic_header = `
-<div class="container">
-    <div class="row">
-        <div class="col d-flex justify-content-between align-items-center">
-            <a  href="/"><h1><img  class="responsive-logo"  src="/assets/img/kseta_rogo.png" /></h1></a>
-            <nav class="d-flex gdic_nav">
-                <ul class="d-flex f_s3">
-                    <li class="nav_list1">
-                        <a href="m1_1_planning.html" class="main_link">협회소개</a>
-                        <ul class="sub_menu f_s1">
-                            <li><a href="m1_1_planning.html">인사말</a></li>
-                            <li><a href="m1_1_planning.html">조직도</a></li>
-                            <li><a href="m1_1_planning.html">오시는 길</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav_list2">
-                        <a href="m2_1_vision.html" class="main_link">융합교육</a>
-                        <ul class="sub_menu f_s1">
-                            <li><a href="m2_1_vision.html">사업목표</a></li>
-                            <li><a href="m2_2_benefit.html">추진사업</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav_list3">
-                        <a href="m3_1_sale01.html" class="main_link">자격검정</a>
-                        <ul class="sub_menu f_s1">
-                            <li><a href="m3_1_sale01.html">빅데이터 전문가</a></li>
-                            <li><a href="m3_1_sale01.html">인공지능 마스터</a></li>                            
-                            <li><a href="m3_1_sale01.html">자격증 발급</a></li>                
-                            <li><a href="m3_1_sale01.html">시험접수</a></li>           
-                        </ul>
-                    </li>
-                    <li class="nav_list4">
-                        <a href="m4_1_notice.html" class="main_link">기타사업</a>
-                        <ul class="sub_menu f_s1">
-                            <li><a href="m4_1_notice.html">취업지원</a></li>
-                            <li><a href="m4_1_notice.html">IT융합교육</a></li>
-                            <li><a href="m4_1_notice.html">학술연구</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav_list4">
-                        <a href="m4_1_notice.html" class="main_link">고객센터</a>
-                        <ul class="sub_menu f_s1">
-                            <li><a href="m4_1_notice.html">공지사항</a></li>
-                            <li><a href="m4_1_notice.html">1:1문의</a></li>
-                        </ul>
-                    </li>
-                </ul>                
-                <ul class="d-flex">
-                     <li class="nav_auth">
-                        <a href="#" class="auth_link">회원가입</a>
-                    </li> 
-                    <li class="nav_auth">
-                        <a href="#" class="auth_link ">로그인</a>
-                    </li>
-                </ul>                   
-            </nav>
+var kseta_header = `
+  <!-- KSETA 헤더 시작 -->
+  <header class="kseta-header">
+    <!-- 상단 인증 영역 -->
+    <div class="kseta-header__top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="kseta-header__auth">
+              <a href="#" class="kseta-header__auth-link">회원가입</a>
+              <a href="#" class="kseta-header__auth-link">로그인</a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<div class="menu_more_bg"></div>`;
+  
+    <!-- 메인 헤더 영역 -->
+    <div class="kseta-header__main">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center">
+              <!-- 로고 영역 -->
+              <h1 class="kseta-header__logo-wrap">
+                <a href="/" class="kseta-header__logo-link">
+                  <img src="/assets/img/kseta_rogo.png" alt="KSETA 로고" class="kseta-header__logo">
+                </a>
+              </h1>
+  
+              <!-- 네비게이션 영역 -->
+              <nav class="kseta-header__nav">
+                <!-- 모바일 토글 버튼 -->
+                <button class="kseta-header__toggler d-lg-none" type="button">
+                  <i class="fas fa-bars"></i>
+                </button>
+  
+                <!-- 메인 메뉴 -->
+                <ul class="kseta-header__menu">
+                  <li class="kseta-header__menu-item">
+                    <a href="#" class="kseta-header__menu-link">협회소개</a>
+                    <ul class="kseta-header__submenu">
+                      <li class="kseta-header__submenu-item">
+                        <a href="#" class="kseta-header__submenu-link">인사말</a>
+                      </li>
+                      <li class="kseta-header__submenu-item">
+                        <a href="#" class="kseta-header__submenu-link">조직도</a>
+                      </li>
+                      <li class="kseta-header__submenu-item">
+                        <a href="#" class="kseta-header__submenu-link">오시는 길</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="kseta-header__menu-item">
+                    <a href="#" class="kseta-header__menu-link">융합교육</a>
+                    <ul class="kseta-header__submenu">
+                      <li class="kseta-header__submenu-item">
+                        <a href="#" class="kseta-header__submenu-link">사업목표</a>
+                      </li>
+                      <li class="kseta-header__submenu-item">
+                        <a href="#" class="kseta-header__submenu-link">추진사업</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="kseta-header__menu-item">
+                    <a href="#" class="kseta-header__menu-link">자격검정</a>
+                    <ul class="kseta-header__submenu">
+                      <li class="kseta-header__submenu-item">
+                        <a href="#" class="kseta-header__submenu-link">빅데이터 전문가</a>
+                      </li>
+                      <li class="kseta-header__submenu-item">
+                        <a href="#" class="kseta-header__submenu-link">인공지능 마스터</a>
+                      </li>
+                      <li class="kseta-header__submenu-item">
+                        <a href="#" class="kseta-header__submenu-link">자격증 발급</a>
+                      </li>
+                      <li class="kseta-header__submenu-item">
+                        <a href="#" class="kseta-header__submenu-link">시험접수</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="kseta-header__menu-item">
+                    <a href="#" class="kseta-header__menu-link">기타사업</a>
+                    <ul class="kseta-header__submenu">
+                      <li class="kseta-header__submenu-item">
+                        <a href="#" class="kseta-header__submenu-link">취업지원</a>
+                      </li>
+                      <li class="kseta-header__submenu-item">
+                        <a href="#" class="kseta-header__submenu-link">IT융합교육</a>
+                      </li>
+                      <li class="kseta-header__submenu-item">
+                        <a href="#" class="kseta-header__submenu-link">학술연구</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="kseta-header__menu-item">
+                    <a href="#" class="kseta-header__menu-link">고객센터</a>
+                    <ul class="kseta-header__submenu">
+                      <li class="kseta-header__submenu-item">
+                        <a href="#" class="kseta-header__submenu-link">공지사항</a>
+                      </li>
+                      <li class="kseta-header__submenu-item">
+                        <a href="#" class="kseta-header__submenu-link">1:1문의</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+`;
+//     `
+// <div class="container">
+//     <div class="row">
+//         <div class="col d-flex justify-content-between align-items-center">
+//             <a  href="/"><h1><img  class="responsive-logo"  src="/assets/img/kseta_rogo.png" /></h1></a>
+//             <nav class="d-flex gdic_nav">
+//                 <ul class="d-flex f_s3">
+//                     <li class="nav_list1">
+//                         <a href="m1_1_planning.html" class="main_link">협회소개</a>
+//                         <ul class="sub_menu f_s1">
+//                             <li><a href="m1_1_planning.html">인사말</a></li>
+//                             <li><a href="m1_1_planning.html">조직도</a></li>
+//                             <li><a href="m1_1_planning.html">오시는 길</a></li>
+//                         </ul>
+//                     </li>
+//                     <li class="nav_list2">
+//                         <a href="m2_1_vision.html" class="main_link">융합교육</a>
+//                         <ul class="sub_menu f_s1">
+//                             <li><a href="m2_1_vision.html">사업목표</a></li>
+//                             <li><a href="m2_2_benefit.html">추진사업</a></li>
+//                         </ul>
+//                     </li>
+//                     <li class="nav_list3">
+//                         <a href="m3_1_sale01.html" class="main_link">자격검정</a>
+//                         <ul class="sub_menu f_s1">
+//                             <li><a href="m3_1_sale01.html">빅데이터 전문가</a></li>
+//                             <li><a href="m3_1_sale01.html">인공지능 마스터</a></li>
+//                             <li><a href="m3_1_sale01.html">자격증 발급</a></li>
+//                             <li><a href="m3_1_sale01.html">시험접수</a></li>
+//                         </ul>
+//                     </li>
+//                     <li class="nav_list4">
+//                         <a href="m4_1_notice.html" class="main_link">기타사업</a>
+//                         <ul class="sub_menu f_s1">
+//                             <li><a href="m4_1_notice.html">취업지원</a></li>
+//                             <li><a href="m4_1_notice.html">IT융합교육</a></li>
+//                             <li><a href="m4_1_notice.html">학술연구</a></li>
+//                         </ul>
+//                     </li>
+//                     <li class="nav_list4">
+//                         <a href="m4_1_notice.html" class="main_link">고객센터</a>
+//                         <ul class="sub_menu f_s1">
+//                             <li><a href="m4_1_notice.html">공지사항</a></li>
+//                             <li><a href="m4_1_notice.html">1:1문의</a></li>
+//                         </ul>
+//                     </li>
+//                 </ul>
+//                 <ul class="d-flex">
+//                      <li class="nav_auth">
+//                         <a href="#" class="auth_link">회원가입</a>
+//                     </li>
+//                     <li class="nav_auth">
+//                         <a href="#" class="auth_link ">로그인</a>
+//                     </li>
+//                 </ul>
+//             </nav>
+//         </div>
+//     </div>
+// </div>
+// <div class="menu_more_bg"></div>`;
 
-var gdic_footer = `
+var kseta_footer = `
 <section class="kseta-logo-section">
     <div class="kseta_intro-title">
         <h2 class="kseta_intro-title__main">파트너 및 기관</h2>
@@ -128,81 +243,72 @@ var gdic_footer = `
             </div>
         </div>
     </footer>
-
     
 </footer>
-
-
-<!--<div class="container">        -->
-<!--        <div class="col d-flex justify-content-between">-->
-<!--            <div class="f_c_g2 f_s0">-->
-<!--                <p class="mb_10">과학기술정보통신부 허가 제2021-32-0003호<br>-->
-<!--이사장 : 황승준 대표<br>-->
-
-<!--부산광역시 사상구 주례로27번길 34 K-테크벨리 305호<br>-->
-
-<!--Tel : 070-7701-7713 Fax : 0303-3447-7713<br>-->
-
-<!--E-Mail : kseta@kseta.or.kr<br>-->
-<!--                </p>-->
-<!--                <p>Powered (c) 2018 by thedaham. all right reserved.</p>-->
-<!--            </div>-->
-<!--            <div><img class="responsive-logo" src="/assets/img/kseta_rogo.png" /></div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-
 `;
 
-var gdic_board = `
-<div class="board_top1 border-bottom f_s0 f_c_g2">
-    <p>2023년 04월 공사진행 현황 알림</p>
-</div>
-<div class="board_top1 mb_10 f_s0 f_c_g2">
-    <p><span class="mr_10">작성자 : 최고관리자</span> <span class="mr_10">23-05-12 09:33</span> <span class="mr_10">조회수 : 266회</span> <span class="mr_10">댓글 : 0건</span></p>
-</div>
-<div class="d-flex justify-content-between align-items-center">
-    <button class="board_btn1 f_s1">다음글</button>
-
-    <button class="board_btn1 f_s1">이전글</button>
-</div>
-
-<div class="border_con_box">
-    <p>전경사진</p>
-    <p>전경사진</p>
-    <p>전경사진</p>
-    <p>전경사진</p>
-    <p>전경사진</p>
-    <p>전경사진</p>
-    <p>전경사진</p>
-    <p>전경사진</p>
-    <p>전경사진</p>
-</div>
-
-<div class="f_c_g1 mb_20 f_s1">
-    <p>댓글목록</p>
-</div>
-
-<div class="f_c_g2 mb_30 f_s0 text-center">
-    <p>등록된 댓글이 없습니다.</p>
-</div>
-
-<div class="d-flex justify-content-end align-items-center">
-    <button class="board_btn1 f_s1" onclick="board_hide()">목록으로</button>
-</div>
-`
-
 $(function () {
-    $(document).on("mouseover", ".gdic_nav", function () {
-        $('#gdic_header').addClass('sub_show');
-        $('.gdic_nav .sub_menu').addClass('show');
+    // 데스크톱 메뉴 호버 이벤트
+    $(document).on("mouseover", ".kseta-header__menu-item", function () {
+        if (window.innerWidth >= 992) {  // 데스크톱에서만 호버 효과 적용
+            $(this).find('.kseta-header__submenu').css({
+                'display': 'block',
+                'opacity': '1',
+                'visibility': 'visible'
+            });
+        }
     });
 
-    $(document).on("mouseout", ".gdic_nav", function () {
-        $('#gdic_header').removeClass('sub_show');
-        $('.gdic_nav .sub_menu').removeClass('show');
+    $(document).on("mouseout", ".kseta-header__menu-item", function () {
+        if (window.innerWidth >= 992) {  // 데스크톱에서만 호버 효과 적용
+            $(this).find('.kseta-header__submenu').css({
+                'display': 'none',
+                'opacity': '0',
+                'visibility': 'hidden'
+            });
+        }
     });
-})
+
+    // 모바일 토글 버튼 클릭 이벤트
+    $('.kseta-header__toggler').on('click', function () {
+        $(this).find('i').toggleClass('fa-bars fa-times');
+        $('.kseta-header__menu').toggleClass('kseta-header__menu--active');
+    });
+
+    // 모바일 서브메뉴 토글
+    $('.kseta-header__menu-link').on('click', function (e) {
+        if (window.innerWidth < 992) {  // 모바일에서만 적용
+            const $submenu = $(this).siblings('.kseta-header__submenu');
+            if ($submenu.length) {
+                e.preventDefault();
+                $('.kseta-header__submenu').not($submenu).slideUp(); // 다른 서브메뉴 닫기
+                $('.kseta-header__menu-link').not($(this)).removeClass('active');
+                $submenu.slideToggle();
+                $(this).toggleClass('active');
+            }
+        }
+    });
+
+
+    // 리사이즈 이벤트 처리
+    $(window).on('resize', function () {
+        if (window.innerWidth >= 992) {
+            $('.kseta-header__menu').removeClass('kseta-header__menu--active');
+            $('.kseta-header__submenu').removeAttr('style');
+        }
+    });
+});
+// $(function () {
+//     $(document).on("mouseover", ".gdic_nav", function () {
+//         $('#gdic_header').addClass('sub_show');
+//         $('.gdic_nav .sub_menu').addClass('show');
+//     });
+//
+//     $(document).on("mouseout", ".gdic_nav", function () {
+//         $('#gdic_header').removeClass('sub_show');
+//         $('.gdic_nav .sub_menu').removeClass('show');
+//     });
+// })
 
 function board_show() {
     $('.border_more_area').show();

@@ -6,30 +6,21 @@
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <meta content="http://gdicland.com//assets/img/m1_1_planning_img1.jpg" property="og:image">
     <title>김해대동첨단산업단지㈜</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" th:href="@{/assets/css/gdic_style_v1.1.css}">
-    <script th:src="@{/assets/js/jquery.min.js}"></script>
-    <script th:src="@{/assets/js/slick.min.js}"></script>
+    <!--    <script th:src="@{/assets/js/jquery.min.js}"></script>-->
+    <!--    <script th:src="@{/assets/js/slick.min.js}"></script>-->
     <script th:src="@{/assets/js/gdic_v1.1.js}"></script>
-    <script th:src="@{/assets/js/main.js}"></script>
+    <!--    <script th:src="@{/assets/js/main.js}"></script>-->
     <script>
         $(function () {
-            $('#gdic_header').html(gdic_header);
-            $('#gdic_footer').html(gdic_footer);
-            footer_slide_on();
-            $('.main_popup').addClass('show');
-
-            $('#main_slide').slick({
-                slide: 'div', //슬라이드 되어야 할 태그 ex) div, li
-                infinite: true,  //무한 반복 옵션
-                slidesToShow: 1, // 한 화면에 보여질 컨텐츠 개수
-                speed: 350,  // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
-                arrows: true,  // 옆으로 이동하는 화살표 표시 여부
-                dots: false,  // 스크롤바 아래 점으로 페이지네이션 여부
-                autoplay: true, // 자동 스크롤 사용 여부
-                autoplaySpeed: 5000,  // 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
-                pauseOnHover: false, // 슬라이드 이동 시 마우스 호버하면 슬라이더 멈추게 설정
-                draggable: true,  //드래그 가능 여부
-            })
+            $('#kseta_header').html(kseta_header);
+            $('#kseta_footer').html(kseta_footer);
         })
     </script>
 </head>
@@ -37,55 +28,81 @@
 <style>
 
 </style>
-<body id="gdic_main">
-<header id="gdic_header">
+<body id="">
 
+<header id="kseta_header">
 </header>
 
 <!--슬라이드 배너 시작-->
-<div class="main_bg1" id="gdic_body">
-    <div id="main_slide" style="overflow-x: hidden;">
-        <div class="gdic_main_banner1">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="f_c_w ft_s5 fw_pb text_box fw_nb">
-                            <h2>지금은 창의력 있는 융합인재가 필요한 시대!</h2>
-                            <p>소프트웨어 중심 융합교육을 통한 창의적 인재육성</p>
-                            <p>(사)한국융합인재교육협회가 구심점 역할을 하겠습니다.</p>
-                        </div>
-                    </div>
-                </div>
+<section class="kseta-slide">
+    <div class="kseta-slide__container">
+        <!-- HTML 수정 부분 -->
+        <div class="kseta-slide__item">
+            <img alt="슬라이드 1" src="/assets/img/main_banner1.png">
+            <div class="kseta-slide__content">
+                <h2 class="kseta-slide__title">메인 타이틀 1</h2>
+                <p class="kseta-slide__subtitle">서브 타이틀 1입니다.</p>
             </div>
         </div>
-        <div class="gdic_main_banner1 type2">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="f_c_w ft_s5 fw_pb text_box fw_nb">
-                            <p>4차 산업혁명시대의 IT융합(STEAM)인력 양성을</p>
-                            <p>위하여 산업체, 교육기관, IT전문가가 모였습니다.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="kseta-slide__item">
+            <img alt="슬라이드 2" src="/assets/img/main_banner2.png">
         </div>
-
-        <div class="gdic_main_banner1 type3">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="f_c_w ft_s5 fw_pb text_box fw_nb">
-                            <p>(사)한국융합인재교육협회는</p>
-                            <p class="ft_s3">산학협력연구/개발한 IT융합교육 프로그램을 통한</p>
-                            <p class="ft_s3">인재육성과 4차 산업혁명을 선도하는 우리산업의 경쟁력 강화를 지원합니다.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="kseta-slide__item">
+            <img alt="슬라이드 3" src="/assets/img/main_banner3.png">
         </div>
     </div>
-</div>
+
+    <div class="kseta-slide__controls">
+        <button class="kseta-slide__button kseta-slide__button--prev">←</button>
+        <button class="kseta-slide__button kseta-slide__button--next">→</button>
+    </div>
+
+    <div class="kseta-slide__indicators"></div>
+    <!--    <button class="kseta-slide__autoplay">자동재생 중지</button>-->
+</section>
+<!--<div class="main_bg1" id="gdic_body">-->
+<!--    <div id="main_slide" style="overflow-x: hidden;">-->
+<!--        <div class="gdic_main_banner1">-->
+<!--            <div class="container">-->
+<!--                <div class="row">-->
+<!--                    <div class="col">-->
+<!--                        <div class="f_c_w ft_s5 fw_pb text_box fw_nb">-->
+<!--                            <h2>지금은 창의력 있는 융합인재가 필요한 시대!</h2>-->
+<!--                            <p>소프트웨어 중심 융합교육을 통한 창의적 인재육성</p>-->
+<!--                            <p>(사)한국융합인재교육협회가 구심점 역할을 하겠습니다.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="gdic_main_banner1 type2">-->
+<!--            <div class="container">-->
+<!--                <div class="row">-->
+<!--                    <div class="col">-->
+<!--                        <div class="f_c_w ft_s5 fw_pb text_box fw_nb">-->
+<!--                            <p>4차 산업혁명시대의 IT융합(STEAM)인력 양성을</p>-->
+<!--                            <p>위하여 산업체, 교육기관, IT전문가가 모였습니다.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="gdic_main_banner1 type3">-->
+<!--            <div class="container">-->
+<!--                <div class="row">-->
+<!--                    <div class="col">-->
+<!--                        <div class="f_c_w ft_s5 fw_pb text_box fw_nb">-->
+<!--                            <p>(사)한국융합인재교육협회는</p>-->
+<!--                            <p class="ft_s3">산학협력연구/개발한 IT융합교육 프로그램을 통한</p>-->
+<!--                            <p class="ft_s3">인재육성과 4차 산업혁명을 선도하는 우리산업의 경쟁력 강화를 지원합니다.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 <!--슬라이드 배너 종료-->
 
 <!---협회소개 시작-->
@@ -348,7 +365,7 @@
 <!--오시는 길 종료-->
 
 
-<footer id="gdic_footer"></footer>
+<footer id="kseta_footer"></footer>
 
 
 </body>

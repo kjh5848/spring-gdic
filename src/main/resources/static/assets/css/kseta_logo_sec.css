@@ -37,6 +37,7 @@
 }
 
 /* 스크롤 애니메이션 */
+
 @keyframes scroll {
     0% {
         transform: translateX(0);
